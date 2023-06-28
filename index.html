@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">Portfolio<b class="dot">.</b></div>
+            <ul class="navItems">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">skills</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div class="links">
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="toggleSwitch">
+                <a href="#"><i class="fa fa-sun icons"></i></a>
+                <a href="#"><i class="fa fa-moon icons"></i></a>
+                
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello I'm Anchit </span>
+                <h1>I'm <span class="multiText"></span></h1>
+                <p>I am Computer Science Student with skills in taking fullstack application from scratch to production.<></p>
+                <div class="btns">
+                    <button>Download CV</button>
+                    <button>Hire Me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="images/208-2089231_lines-line-geometric-frame-overlay-glow-neon-neon.png" id="splash">
+                    <img src="images/Screenshot_20230211_060806_Chrome-transformed-removebg-preview.png" id="me" height="20%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["a coder","developer","designer"],
+            loop:true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+    </script>
+
+
+
+    <div class="middle-container">
+        <div class="profile">
+            <div class="card">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="skills">
+            <h2>My Skills.</h2>
+            <div class="skill-row">
+                <img class="app" src="https://media1.giphy.com/media/llarwdtFqG63IlqUR1/giphy.gif?cid=ecf05e47lx16fj4zlannnr742d6e4zk6t1qzeccmakfan5l4&rid=giphy.gif&ct=g" alt="">
+                <h3>Application Development</h3>
+                <p>I have my strength in Android Development(Java) and Multiplatform App Development(Flutter) for both Android And IOS. Not to brag but one of my app was selected in Smart India Hackathon 2022.</p>
+            </div>
+            <div class="skill-row">
+                <img class="web" src="https://media1.giphy.com/media/WFZvB7VIXBgiz3oDXE/200w.webp?cid=ecf05e47w4rtw6ayy0rre3tnm1o879hr5b2nn1a4m4gvlf41&rid=200w.webp&ct=s" alt="">
+                <h3>Web Development</h3>
+                <p>Playing with HTML, CSS, Bootstrap, Javascript(JQuery), NodeJS, MongoDB, React etc. is kind of my hobby. I'm doing this from last 3 years.</p>
+            </div>
+            <div class="skill-row">
+                <img class="ml" src="https://media3.giphy.com/media/Qx5iidUF67vTlqa9s2/giphy.gif?cid=ecf05e47iphkt2z3n0kjt61e40qm446kj85sliwjdh7d2y9r&rid=giphy.gif&ct=s" alt="">
+                <h3>Machine Learning</h3>
+                <p>I have being interested in machine learning since last 5 months. Not much experienced but I'm very eager to learn more and more in this feild.</p>
+            </div>
+            <div class="skill-row">
+                <img class="write" src="https://media1.giphy.com/media/zwU2dIfYz83c8rOjXr/giphy.gif?cid=ecf05e47s3wjmz4reqwviqg253bdv8gfxjxlh6wzvn91xgcf&rid=giphy.gif&ct=s" alt="">
+                <h3>Others</h3>
+                <p>I'm a technology lover with knowledge of various computer languages like JAVA, C++ and Python. <b class="gc">Google cloud</b> has also been my attention seeker and I have earned 11 batches for GCloud on quicklab in Google cloud 30 days Program.</p>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>If you are looking for a software developer, congrats!! your search ends here.</h3>
+            <p class="contact-msg">You can directly contact me through Mail or on my LinkedIn for and kind of opportunity u want to give me. It would be my pleasure. Thank you for visiting my site.😊</p>
+            <a class="btn" href="https://drive.google.com/file/d/1Ljb1IkVHGOr-GntX9MgVVhYhXjN5UXDw/view?usp=share_link">Download My Resume </a>
+            <a class="btn" href="mailto:anchitpandey3@email.com">CONTACT ME</a>
+        </div>
+    </div>
+
+
+    
+
+
+
+    <!-- js code start from here -->
+ <script>
+    const toggleSwitch = document.querySelector('.toggleSwitch');
+    toggleSwitch. addEventListener ('click', function (){
+       document. body. classList. toggle('switch');
+
+       if(document.body.classList.contains('switch')===true){
+        document.getElementById("splash").src = "images/black-back.png";
+        }
+
+        if(document.body.classList.contains('switch')===false)
+        document.getElementById("splash").src = "images/208-2089231_lines-line-geometric-frame-overlay-glow-neon-neon.png";
+    });
+    
+ </script>
+ 
+
+</body>
+</html>
